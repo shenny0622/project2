@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--css reset end */
+
+＊,*:after,*:before{
+    box-sizing: border-box;
+  }
+
+/*清除 img 下面留白  */
+img{
+    display: block;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	/* display: block; */
+}
+ 
+body {
+    font-family:Roboto,微軟正黑體,sans-serif;
+    font-style: italic; 
+}
+
+.d-flex{
+	display: flex;
+}
+
+.container {
+    text-align: center;
+}
+
+.banner{
+	height: 960px;
+	background-image: url("https://hexschool.github.io/webLayoutTraining1st/week2/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	line-height: 42px;
+	font-weight: bold;
+	color: #fff;
+}
+.bannerContent{
+	padding-top: 50px; 
+}
+
+.banner h1 {
+    font-size: 80px;
+    line-height: 94px;
+    margin-bottom: 32px;
+}
+
+.banner span {
+	font-size: 24px; 
+    line-height: 42px;
+}
+
+.banner p {
+	margin-bottom: 48px;
+	margin-left: 13px;
+}
+
+.socialMedia{
+	width: 288px; 
+	justify-content: space-between;
+	margin-left: 13px;
+}
+
+.title{
+	font-size:64px;
+	line-height: 75px;
+}
+
+.about{
+	flex-direction: column;
+	align-items: center;
+	padding-top: 64px;
+	padding-bottom: 56px;
+}
+
+.about img{
+	filter:grayscale(60%)
+}
+
+.about h2{
+	margin-bottom:40px;
+}
+
+.about img{
+	width: 384px;
+	margin-bottom: 24px;
+}
+
+.personal {
+	font-size: 24px;
+	line-height: 42px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+.personal li:not(:last-child){
+	margin-bottom: 8px;
+}
+.personalCareer{
+	border-top: 1px solid #000;
+	width: 384px;
+	font-size: 24px;
+	line-height: 42px;
+	font-weight: bold;
+}
+
+.personalCareer li:first-child{
+	margin-top: 32px;
+}
+
+.personalCareer li:not(:last-child){
+	margin-bottom: 32px;
+}
+
+.personalCareer li::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #891818;
+    position: absolute;
+	margin: 6px 0 0 -38px; 
+}
+
+.personalCareer li{
+	position: relative;
+	padding-left: 31px; 
+}
+
+.brand{
+	background-color: #000;
+	color: #fff;
+	padding-top: 64px;
+	padding-bottom: 160px;
+	flex-direction:column;
+	align-items: center; 
+}
+
+.brand h3{
+	font-size: 24px;
+	line-height: 42px;
+	margin-bottom: 32px;	
+}
+
+.brand p{
+	font-size: 20px;
+	line-height: 42px;
+	margin-bottom: 48px;
+	font-style: normal;
+}
+
+.brandImg{
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 1224px; 
+}
+
+.brandImg img:first-child{
+	margin-bottom: 40px;
+}
+	
+.otherWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week2/photo-1561291386-5be50364cfb5.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	padding-top: 64px;
+	padding-bottom: 106px;
+	color: #000;
+}
+
+.otherWork h2{
+	margin-bottom: 24px;
+}
+
+.otherWork p{
+	font-size: 20px;
+	line-height: 42px;
+	margin-bottom: 48px;
+	font-style: normal;
+}
+
+.otherWork li p{
+	color: #fff;
+	margin-top: 16px;
+	margin-bottom: 56px;
+}
+
+.otherworkImg {
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 1224px;
+}
+
+.contact{
+	background: #000000;
+	color: #fff;
+	padding-top: 64px;
+	padding-bottom: 80px;
+}
+
+.contact p{
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.mb-16{
+	margin-bottom: 16px;
+}
+
+
+
+     
